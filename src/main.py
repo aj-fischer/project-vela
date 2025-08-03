@@ -18,9 +18,12 @@ def main():
     
     # Get current local date and time.
     current_datetime = datetime.now()
+
+    # Round lux value to two decimals for readability.
+    rounded_lux = round(sensor.lux, 2)
     
-    # Lux reading (light intensity) as well as timestamp.
-    data_row = [current_datetime, sensor.lux]
+    # Save rounded lux reading (light intensity) as well as timestamp.
+    data_row = [current_datetime, rounded_lux]
     
     # File name for data file (csv).
     csv_file = "/home/aj/Projects/project-vela/sensor_data.csv"
