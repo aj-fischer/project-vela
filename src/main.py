@@ -23,7 +23,7 @@ def main():
     data_row = [current_datetime, sensor.lux]
     
     # File name for data file (csv).
-    csv_file = "sensor_data.csv"
+    csv_file = "/home/aj/Projects/project-vela/sensor_data.csv"
 
     # Check if file already exists.
     does_file_exist = os.path.isfile(csv_file)
